@@ -58,12 +58,11 @@ function ToDo() {
     <div className="App">
       
       <header className="App-header">
-        <h1>To Do</h1>
-      </header>
-      <span className="login">
       <LoginButton/>
-      </span>
-   
+        <h1>To Do</h1>
+      
+      </header>
+          
       <form onSubmit={handleSubmit}>
         <label className="todoLabel">What do you want to do today?</label>
         <br />
@@ -76,6 +75,7 @@ function ToDo() {
         />
         <input className="button" type="submit" value="Submit" />
       </form>
+      <div className="content">
       {todoList.map((td, index) => (
         td!=="" &&
         <>
@@ -91,6 +91,7 @@ function ToDo() {
           </IconButton>
         </>
       ))}
+      </div>
     </div>
   );
 }

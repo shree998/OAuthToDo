@@ -37,10 +37,22 @@ input[type=text], select {
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
+  margin-left: 10px;
 }
 
-
 .login{
+  margin-right: 1193px;
+}
+
+/* .login{
  justify-content: flex-start;
  margin-right: 1200px;
+} */
+
+
+.content{
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 2px solid #000000;
+  border-radius: 18px;
 }
